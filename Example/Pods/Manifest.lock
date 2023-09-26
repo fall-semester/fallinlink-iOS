@@ -1,0 +1,16 @@
+PODS:
+  - FallInLink (0.1.0)
+
+DEPENDENCIES:
+  - FallInLink (from `../`)
+
+EXTERNAL SOURCES:
+  FallInLink:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  FallInLink: 1f5cb2a5e60ff8ddda96819df43cd39ffba4815d
+
+PODFILE CHECKSUM: f72202cc4fb45725722fdf9321208c3c6b72fa79
+
+COCOAPODS: 1.12.1

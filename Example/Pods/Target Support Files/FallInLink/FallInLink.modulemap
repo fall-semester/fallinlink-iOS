@@ -1,0 +1,6 @@
+framework module FallInLink {
+  umbrella header "FallInLink-umbrella.h"
+
+  export *
+  module * { export * }
+}
