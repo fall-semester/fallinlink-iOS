@@ -20,6 +20,13 @@ it, simply add the following line to your Podfile:
 pod 'FallInLink'
 ```
 
+## Swift Package Manager
+- File > Swift Packages > Add Package Dependency
+- Add https://github.com/fall-semester/fallinlink-iOS
+```asm
+https://github.com/fall-semester/fallinlink-iOS
+```
+
 ## Author
 
 Jeonhui, dlwjsgml02@naver.com
