@@ -23,7 +23,7 @@ extension UIImage {
     }
     
     func compress(_ compressionQuality: CompressionQuality) -> UIImage? {
-        guard let imageData = self.jpegData(compressionQuality: compressionQuality.rawValue) else {
+        guard let imageData =  self.jpegData(compressionQuality: compressionQuality.rawValue) else {
             return nil
         }
         return UIImage(data: imageData)

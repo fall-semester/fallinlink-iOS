@@ -14,7 +14,7 @@ public extension LinkViewController {
         var containerPadding: CGFloat
         var decoSpacing: CGFloat
         
-        init(padding: CGFloat = 16,
+        public init(padding: CGFloat = 16,
              lineWidth: CGFloat = 2,
              containerPadding: CGFloat = 8,
              decoSpacing: CGFloat = 10) {

@@ -7,7 +7,7 @@
 
 import UIKit
 
-struct LinkMetadata: CustomStringConvertible {
+public struct LinkMetadata: CustomStringConvertible {
     let title: String?
     let desc: String?
     let iconProvider: NSItemProvider?
@@ -15,14 +15,14 @@ struct LinkMetadata: CustomStringConvertible {
     let icon: UIImage?
     let image: UIImage?
     
-    var description: String {
+    public var description: String {
         let desc = Mirror(reflecting: self).children.compactMap { (label: String?, value: Any) in
             return "\(label ?? "unknown")=\(value)"
         }.joined(separator: ",\n\t")
         return "LinkMetadata(\n\t\(desc)\n)"
     }
     
-    init(title: String?,
+    public init(title: String?,
          desc: String?,
          iconProvider: NSItemProvider?,
          imageProvider: NSItemProvider?,
@@ -38,7 +38,7 @@ struct LinkMetadata: CustomStringConvertible {
 }
 
 extension LinkMetadata {
-    func updateIcon(icon: UIImage?) -> LinkMetadata {
+    public func updateIcon(icon: UIImage?) -> LinkMetadata {
         .init(title: title,
               desc: desc,
               iconProvider: iconProvider,
@@ -47,7 +47,7 @@ extension LinkMetadata {
               image: image)
     }
     
-    func updateImage(image: UIImage?) -> LinkMetadata {
+    public func updateImage(image: UIImage?) -> LinkMetadata {
         .init(title: title,
               desc: desc,
               iconProvider: iconProvider,

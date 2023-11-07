@@ -9,20 +9,19 @@ import UIKit
 import Combine
 import LinkPresentation
 
-public class LinkViewController: UIViewController {
-    static let metadataProvider: LPMetadataProvider = LPMetadataProvider()
-    private var cancellable: Set<AnyCancellable> = Set<AnyCancellable>()
+open class LinkViewController: UIViewController {
+    var cancellable: Set<AnyCancellable> = Set<AnyCancellable>()
     
-    private lazy var imageViewHeightConstraint: NSLayoutConstraint = metadataImageView
+    lazy var imageViewHeightConstraint: NSLayoutConstraint = metadataImageView
         .heightAnchor
         .constraint(equalTo: metadataImageView.widthAnchor,
                     multiplier: metadataImageView.image?.aspectBaseHeight ?? 0)
     
-    let url: URL
+    var url: URL
     var metadata: LinkMetadata?
     var style: LinkViewController.Style
     
-    private var metadataImageView: UIImageView = {
+    var metadataImageView: UIImageView = {
         let imageView = UIImageView()
         imageView.contentMode = .scaleAspectFit
         imageView.layer.cornerRadius = 20
@@ -30,7 +29,7 @@ public class LinkViewController: UIViewController {
         return imageView
     }()
     
-    private lazy var metadataUrlTextView: UITextView = {
+    lazy var metadataUrlTextView: UITextView = {
         let textView = UITextView()
         textView.textColor = .linkGray
         textView.backgroundColor = .clear
@@ -44,16 +43,16 @@ public class LinkViewController: UIViewController {
         
     }()
     
-    private var metadataIconImageView: UIImageView = {
+    var metadataIconImageView: UIImageView = {
         let imageView = UIImageView()
         imageView.contentMode = .scaleAspectFit
         imageView.layer.cornerRadius = 4
         imageView.clipsToBounds = true
         return imageView
     }()
-
     
-    private var metadataTextContainer: UIView = {
+    
+    var metadataTextContainer: UIView = {
         let view = UIView()
         view.backgroundColor = .linkBackground
         view.layer.cornerRadius = 10
@@ -62,7 +61,7 @@ public class LinkViewController: UIViewController {
         return view
     }()
     
-    private var metadataTitleTextView: UITextView = {
+    var metadataTitleTextView: UITextView = {
         let textView = UITextView()
         textView.textColor = .black
         textView.font = .systemFont(ofSize: 20, weight: .bold)
@@ -73,7 +72,7 @@ public class LinkViewController: UIViewController {
         return textView
     }()
     
-    private var metadataDescriptionTextView: UITextView = {
+    var metadataDescriptionTextView: UITextView = {
         let textView = UITextView()
         textView.textColor = .linkGray
         textView.font = .systemFont(ofSize: 16)
@@ -86,22 +85,22 @@ public class LinkViewController: UIViewController {
         return textView
     }()
     
-    private var line: UIView = {
+    var line: UIView = {
         let view = UIView()
         view.backgroundColor = .black
         return view
     }()
-
-    init(url: URL,
-         metadata: LinkMetadata?=nil,
-         style: Style=Style()){
+    
+    public init(url: URL,
+                metadata: LinkMetadata?=nil,
+                style: Style=Style()){
         self.url = url
         self.metadata = metadata
         self.style = style
         super.init(nibName: nil, bundle: nil)
     }
     
-    required init?(coder: NSCoder) {
+    required public init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
     
@@ -181,7 +180,7 @@ public class LinkViewController: UIViewController {
             metadataImageView.trailingAnchor.constraint(equalTo: self.view.trailingAnchor,
                                                         constant: -style.padding),
             imageViewHeightConstraint,
-
+            
             metadataUrlTextView.topAnchor.constraint(equalTo: metadataImageView.bottomAnchor),
             metadataUrlTextView.leadingAnchor.constraint(equalTo: self.view.leadingAnchor,
                                                          constant: style.padding),
@@ -202,8 +201,9 @@ public class LinkViewController: UIViewController {
     }
     
     private func fetchMetadata() {
-        LinkViewController.metadataProvider.startFetchingMetadataWithImagePublisher(url: url)
-            .receive(on: DispatchQueue.main)
+        
+        LPMetadataProvider().startFetchingMetadataWithImagePublisher(url: url)
+            .receive(on: DispatchQueue.global())
             .sink { [weak self] completion in
                 switch completion {
                 case .finished:
@@ -218,30 +218,35 @@ public class LinkViewController: UIViewController {
     }
     
     private func updateLayoutWithError(_ error: Error) {
-        self.view.layoutIfNeeded()
+        DispatchQueue.main.async {
+            self.view.layoutIfNeeded()
+        }
     }
     
     private func updateLayoutWithMetadata(_ metadata: LinkMetadata) {
         self.metadata = metadata
-        
-        #if DEBUG 
-        print(metadata)
-        #endif
-
-        self.metadataImageView.removeConstraint(imageViewHeightConstraint)
-        self.imageViewHeightConstraint = self.metadataImageView.heightAnchor
-            .constraint(equalTo: metadataImageView.widthAnchor,
-                        multiplier: metadata.image?.aspectBaseHeight ?? 0)
-        self.imageViewHeightConstraint.isActive = true
-        
-        UIView.transition(with: metadataImageView,
-                          duration: 0.7,
-                          options: .transitionCrossDissolve) {
-            self.metadataImageView.image = metadata.image
-            self.metadataUrlTextView.text = self.url.absoluteString
-            self.metadataTitleTextView.text = metadata.title ?? ""
-            self.metadataDescriptionTextView.text = metadata.desc ?? ""
-            self.view.layoutIfNeeded()
+        DispatchQueue.main.async { [weak self] in
+            guard let self = self else { return }
+            self.metadataImageView.removeConstraint(self.imageViewHeightConstraint)
+            self.imageViewHeightConstraint = self.metadataImageView.heightAnchor
+                .constraint(equalTo: self.metadataImageView.widthAnchor,
+                            multiplier: metadata.image?.aspectBaseHeight ?? 0)
+            self.imageViewHeightConstraint.isActive = true
+            
+            UIView.transition(with: self.metadataImageView,
+                              duration: 0.7,
+                              options: .transitionCrossDissolve) {
+                self.metadataImageView.image = metadata.image
+                self.metadataUrlTextView.text = self.url.absoluteString
+                self.metadataTitleTextView.text = metadata.title ?? ""
+                self.metadataDescriptionTextView.text = metadata.desc ?? ""
+                self.view.layoutIfNeeded()
+            }
         }
+    }
+    
+    public func updateURL(url: URL) {
+        self.url = url
+        self.fetchMetadata()
     }
 }

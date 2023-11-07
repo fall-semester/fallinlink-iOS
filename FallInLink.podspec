@@ -8,8 +8,8 @@
 
 Pod::Spec.new do |s|
   s.name             = 'FallInLink'
-  s.version          = '0.1.0'
-  s.summary          = 'A short description of FallInLink.'
+  s.version          = '1.0.0'
+  s.summary          = 'Awesome Link Preview'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -25,18 +25,10 @@ TODO: Add long description of the pod here.
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'Jeonhui' => 'dlwjsgml02@naver.com' }
-  s.source           = { :git => 'https://github.com/Jeonhui/FallInLink.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+  s.source           = { :git => 'https://github.com/fall-semester/fallinlink-iOS.git', :tag => s.version.to_s }
 
-  s.ios.deployment_target = '10.0'
+  s.ios.deployment_target = '15.0'
 
-  s.source_files = 'FallInLink/Classes/**/*'
+  s.source_files = 'Sources/fallinlink-iOS/**/*'
   
-  # s.resource_bundles = {
-  #   'FallInLink' => ['FallInLink/Assets/*.png']
-  # }
-
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
 end
