@@ -1,5 +1,5 @@
 PODS:
-  - FallInLink (0.1.0)
+  - FallInLink (1.0.0)
 
 DEPENDENCIES:
   - FallInLink (from `../`)
@@ -9,8 +9,8 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  FallInLink: 1f5cb2a5e60ff8ddda96819df43cd39ffba4815d
+  FallInLink: 147773e4815ae0b86da163a1a0528e430d5dcfe7
 
 PODFILE CHECKSUM: f72202cc4fb45725722fdf9321208c3c6b72fa79
 
-COCOAPODS: 1.12.1
+COCOAPODS: 1.13.0

@@ -1,0 +1,6 @@
+Target dependency graph (3 targets)
+Target 'Pods-FallInLink_Tests' in project 'Pods'
+➜ Explicit dependency on target 'Pods-FallInLink_Example' in project 'Pods'
+Target 'Pods-FallInLink_Example' in project 'Pods'
+➜ Explicit dependency on target 'FallInLink' in project 'Pods'
+Target 'FallInLink' in project 'Pods' (no dependencies)

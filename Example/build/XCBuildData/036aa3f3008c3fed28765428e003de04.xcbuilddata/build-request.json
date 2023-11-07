@@ -1,0 +1,50 @@
+{
+  "buildCommand" : {
+    "command" : "prepareForIndexing",
+    "enableIndexBuildArena" : false,
+    "targets" : null
+  },
+  "configuredTargets" : [
+    {
+      "guid" : "bfdfe7dc352907fc980b868725387e980881db9b875cf94a6572656d835e55a7"
+    },
+    {
+      "guid" : "bfdfe7dc352907fc980b868725387e9854c096cd275366e23ab9e3a3e3c1d306"
+    },
+    {
+      "guid" : "bfdfe7dc352907fc980b868725387e985be39d62009dffc832d043c8ccf0c558"
+    }
+  ],
+  "containerPath" : "/Users/ijeonhui/Github/fall-semester/fallinlink-iOS/Example/Pods/Pods.xcodeproj",
+  "continueBuildingAfterErrors" : true,
+  "enableIndexBuildArena" : false,
+  "hideShellScriptEnvironment" : false,
+  "parameters" : {
+    "action" : "build",
+    "arenaInfo" : {
+      "buildIntermediatesPath" : "",
+      "buildProductsPath" : "",
+      "derivedDataPath" : "/Users/ijeonhui/Library/Developer/Xcode/DerivedData",
+      "indexDataStoreFolderPath" : "/Users/ijeonhui/Library/Developer/Xcode/DerivedData/Pods-furqzzdxuhbbjogzqttfrxcrvxhy/Index.noindex/DataStore",
+      "indexEnableDataStore" : true,
+      "indexPCHPath" : "/Users/ijeonhui/Library/Developer/Xcode/DerivedData/Pods-furqzzdxuhbbjogzqttfrxcrvxhy/Index.noindex/PrecompiledHeaders",
+      "pchPath" : ""
+    },
+    "configurationName" : "Release",
+    "overrides" : {
+      "synthesized" : {
+        "table" : {
+          "ENABLE_PREVIEWS" : "NO",
+          "ENABLE_XOJIT_PREVIEWS" : "NO"
+        }
+      }
+    }
+  },
+  "qos" : "default",
+  "schemeCommand" : "launch",
+  "showNonLoggedProgress" : true,
+  "useDryRun" : true,
+  "useImplicitDependencies" : false,
+  "useLegacyBuildLocations" : false,
+  "useParallelTargets" : false
+}

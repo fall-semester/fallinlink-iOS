@@ -7,69 +7,85 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2FB790A38739D0D0CAF83FED7498EF2F /* ReplaceMe.swift in Sources */ = {isa = PBXBuildFile; fileRef = C936BD9ADB08424FDE99483CA83CA1DD /* ReplaceMe.swift */; };
-		3481D17B2FD9A6D50071105EAA4E2022 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		020CDC7A17654885BCE70EEFF7B4A2F5 /* LPMetadataProvider+.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC88CB069EB90ED9D4EEDCC3192E06E /* LPMetadataProvider+.swift */; };
+		121E0B737E0EC532A6236BCE32E5F60E /* FallInLink-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 45EF1B2F41FBFE791A205BACE5594B8D /* FallInLink-dummy.m */; };
+		1DAA4AD92929672EC7D6FB4A247DA4A9 /* LinkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8C1D01926508D7430469DB6678663AD /* LinkViewController.swift */; };
+		3C4667E355C7FC901A426E6956BF07BD /* LinkPreviewController+Style.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFD74420E9EEB115896EFAFA6C607351 /* LinkPreviewController+Style.swift */; };
+		453C2CBFF28E23586B15B6B0AE76D4D5 /* LinkViewControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B49FD6D2C8465153C90A96719A473F4 /* LinkViewControllerDelegate.swift */; };
 		58FAF8C7EE64C9D8A157F7A97A29794A /* Pods-FallInLink_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 947635AE8E3FB92B465F9209B90B5FB8 /* Pods-FallInLink_Example-dummy.m */; };
 		6488454B2B9C5C718AFE2AF0BA1D6EB1 /* Pods-FallInLink_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 314BD520905CBAEAD184BCEAB7F48350 /* Pods-FallInLink_Tests-dummy.m */; };
-		700B7550887ADA1DC93638F49858F351 /* FallInLink-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 699327EA4CF847CF618769E18DCA5B53 /* FallInLink-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		69D3696B6582A647BEA27A02BE1D70D5 /* LinkMetadata.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6343B53F40DDE5C562D46B78FE181DD3 /* LinkMetadata.swift */; };
+		6D6227A938E2F81781D47930AFA88770 /* LinkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76DE665EE55B45DC210222B821F6DBE8 /* LinkError.swift */; };
 		84DD8795A614FA2AEC68466CD7977ED4 /* Pods-FallInLink_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6F66FE75EFE3A414A85C9D13189CD97C /* Pods-FallInLink_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		AADB682E38A88D2ED6E5202BB377E2B7 /* FallInLink-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B91040F3A4D02C5EA3808C64E302A598 /* FallInLink-dummy.m */; };
+		911109539240C28FF8B5CFA88A5EA0C0 /* FallInLink-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A425F269A277404FF73AEBC26FB0C8F7 /* FallInLink-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		AFF8067D3825230D4DBCACF84A65C14E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		B6EF71CDF2E1CDD338923BE86AEB01E0 /* UIColor+.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF47D69A90963CA4F64EA336DF5C2375 /* UIColor+.swift */; };
+		B83F1E9CECA424DF4160AF1DD1069987 /* UIImage+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AFAD7E4EC4DE2520A3E6BA64B87E163 /* UIImage+.swift */; };
+		C7FE8914E091601EE3D129C65725CC98 /* NSItemProvider+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 757C678BDD935F65442136C8ACEDA4EA /* NSItemProvider+.swift */; };
 		CC783DC11D8D46FD611EABD81793495E /* Pods-FallInLink_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8787BC72843FE0A902A98A3C8C2357D4 /* Pods-FallInLink_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D6E8148D04FC8926F94F8F83BEF6329B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
 		E2686EE73523007A681ACE4CF4C6EE06 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		3F3DBE5F58E5C5A3FE0D4C5198A53B4D /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = EABBBD89E4C637517E9A9D12A862CDA8;
-			remoteInfo = FallInLink;
-		};
-		824597C716001DE9524B3F71E4561296 /* PBXContainerItemProxy */ = {
+		E14318A6B92540518BED76CF5A5BC6AD /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 267AF55E47ACEC5DCD36A870C7969936;
 			remoteInfo = "Pods-FallInLink_Example";
 		};
+		EF91FB19D06FF530A25A2D29E2D87F55 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EABBBD89E4C637517E9A9D12A862CDA8;
+			remoteInfo = FallInLink;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		104CFA22AD6F8CAE4250D431F37C38B2 /* FallInLink.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = FallInLink.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		293DCD9877E2D46964757C8B7FC1FBD8 /* Pods-FallInLink_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FallInLink_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		314BD520905CBAEAD184BCEAB7F48350 /* Pods-FallInLink_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-FallInLink_Tests-dummy.m"; sourceTree = "<group>"; };
 		3871F40249AADB34C16B8768CFFF0AC7 /* Pods-FallInLink_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-FallInLink_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
-		3F0D05A3C6F6BD09BC79B0688CF86C40 /* FallInLink-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FallInLink-prefix.pch"; sourceTree = "<group>"; };
+		40FC9F9BDAE5BE45E84255984F60C050 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		44F05A3D481959C014F673C3EBC8819B /* Pods-FallInLink_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-FallInLink_Example-frameworks.sh"; sourceTree = "<group>"; };
+		45EF1B2F41FBFE791A205BACE5594B8D /* FallInLink-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FallInLink-dummy.m"; sourceTree = "<group>"; };
+		45FF95977DA80810B4630BCC0224C235 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		494BBCCB037CE8F7CD68937CFEAEFF2C /* Pods-FallInLink_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-FallInLink_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		4AFAD7E4EC4DE2520A3E6BA64B87E163 /* UIImage+.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UIImage+.swift"; sourceTree = "<group>"; };
 		512136C6E14FBD053BB52BEF039E8978 /* Pods-FallInLink_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FallInLink_Example.release.xcconfig"; sourceTree = "<group>"; };
-		55B2A01CC17F181C0D2BB8F32F68CB87 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
-		59A006D89DFE25EADF1BFAA3BE8C2898 /* Pods-FallInLink_Example */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-FallInLink_Example"; path = Pods_FallInLink_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		699327EA4CF847CF618769E18DCA5B53 /* FallInLink-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FallInLink-umbrella.h"; sourceTree = "<group>"; };
+		59A006D89DFE25EADF1BFAA3BE8C2898 /* Pods_FallInLink_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FallInLink_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5B49FD6D2C8465153C90A96719A473F4 /* LinkViewControllerDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LinkViewControllerDelegate.swift; path = "Sources/fallinlink-iOS/Classes/LinkViewControllerDelegate.swift"; sourceTree = "<group>"; };
+		6343B53F40DDE5C562D46B78FE181DD3 /* LinkMetadata.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LinkMetadata.swift; path = "Sources/fallinlink-iOS/Classes/LinkMetadata.swift"; sourceTree = "<group>"; };
+		689767587F074F9F10AB8D013649F42A /* FallInLink.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FallInLink.release.xcconfig; sourceTree = "<group>"; };
 		6F66FE75EFE3A414A85C9D13189CD97C /* Pods-FallInLink_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-FallInLink_Tests-umbrella.h"; sourceTree = "<group>"; };
 		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		757C678BDD935F65442136C8ACEDA4EA /* NSItemProvider+.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "NSItemProvider+.swift"; sourceTree = "<group>"; };
+		76DE665EE55B45DC210222B821F6DBE8 /* LinkError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LinkError.swift; sourceTree = "<group>"; };
 		7AFB048D092DDE17A86E5851B1D79E6C /* Pods-FallInLink_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-FallInLink_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		7D35C08B03052703A04D98BD164EC92D /* FallInLink.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = FallInLink.modulemap; sourceTree = "<group>"; };
 		8787BC72843FE0A902A98A3C8C2357D4 /* Pods-FallInLink_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-FallInLink_Example-umbrella.h"; sourceTree = "<group>"; };
 		947635AE8E3FB92B465F9209B90B5FB8 /* Pods-FallInLink_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-FallInLink_Example-dummy.m"; sourceTree = "<group>"; };
 		9CC31AF5374AE3F29BB3ACF42F836C13 /* Pods-FallInLink_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-FallInLink_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		A1AC55777A8D185211815A78B4F31A90 /* FallInLink.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = FallInLink.podspec; sourceTree = "<group>"; tabWidth = 2; };
-		AE5DEB5082569E5C1248368FD4EE7C64 /* FallInLink.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FallInLink.debug.xcconfig; sourceTree = "<group>"; };
+		9D9A4185034390B56A680665D960C460 /* FallInLink.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FallInLink.debug.xcconfig; sourceTree = "<group>"; };
+		A425F269A277404FF73AEBC26FB0C8F7 /* FallInLink-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FallInLink-umbrella.h"; sourceTree = "<group>"; };
+		AF47D69A90963CA4F64EA336DF5C2375 /* UIColor+.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UIColor+.swift"; sourceTree = "<group>"; };
 		B47A9B6A87F87D6A48C81C1420981F86 /* Pods-FallInLink_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-FallInLink_Example-Info.plist"; sourceTree = "<group>"; };
-		B91040F3A4D02C5EA3808C64E302A598 /* FallInLink-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FallInLink-dummy.m"; sourceTree = "<group>"; };
 		BDD3EE57663491A64507557DD16F4161 /* Pods-FallInLink_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-FallInLink_Tests-Info.plist"; sourceTree = "<group>"; };
-		C279AA8392A2F41CE5FF9EC415600A06 /* FallInLink-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "FallInLink-Info.plist"; sourceTree = "<group>"; };
-		C936BD9ADB08424FDE99483CA83CA1DD /* ReplaceMe.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ReplaceMe.swift; path = FallInLink/Classes/ReplaceMe.swift; sourceTree = "<group>"; };
 		CA489D3BBA6A7CF5C077984C68D31DDE /* Pods-FallInLink_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-FallInLink_Tests.modulemap"; sourceTree = "<group>"; };
+		CEC88CB069EB90ED9D4EEDCC3192E06E /* LPMetadataProvider+.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "LPMetadataProvider+.swift"; sourceTree = "<group>"; };
+		D45A5E886338E0A4883BF5538AA07864 /* FallInLink-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "FallInLink-Info.plist"; sourceTree = "<group>"; };
+		D8C1D01926508D7430469DB6678663AD /* LinkViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LinkViewController.swift; path = "Sources/fallinlink-iOS/Classes/LinkViewController.swift"; sourceTree = "<group>"; };
 		DA760DA116174F1B26013609B851AEC3 /* Pods-FallInLink_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-FallInLink_Example.modulemap"; sourceTree = "<group>"; };
 		DCE2ED36B493E796A3A7CA3FABA4DBDD /* Pods-FallInLink_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FallInLink_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		EBC3E31010F1143F735146FAF35EE842 /* FallInLink */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = FallInLink; path = FallInLink.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		EF4A40215DB61F2BD5D01CC899172538 /* FallInLink.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FallInLink.release.xcconfig; sourceTree = "<group>"; };
+		EBC3E31010F1143F735146FAF35EE842 /* FallInLink.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FallInLink.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EFD74420E9EEB115896EFAFA6C607351 /* LinkPreviewController+Style.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "LinkPreviewController+Style.swift"; path = "Sources/fallinlink-iOS/Classes/LinkPreviewController+Style.swift"; sourceTree = "<group>"; };
 		F02DC4D4A435CCF971356FC3D95351E2 /* Pods-FallInLink_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FallInLink_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		F4A03516F03BC1FA88044D3749FF6049 /* Pods-FallInLink_Tests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-FallInLink_Tests"; path = Pods_FallInLink_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		F80F7ED547E4FFB6177044D39FBC6A6B /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		F4A03516F03BC1FA88044D3749FF6049 /* Pods_FallInLink_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FallInLink_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA4A8D482F84AB4E3ED2EA02523D6533 /* FallInLink-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FallInLink-prefix.pch"; sourceTree = "<group>"; };
+		FB86085465685EC8C19FA9C35BC959FD /* FallInLink.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = FallInLink.modulemap; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,11 +97,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		355C8BFA42BB83F2FF508B93A518FE12 /* Frameworks */ = {
+		212B231434477A1E57C975F609497BAE /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3481D17B2FD9A6D50071105EAA4E2022 /* Foundation.framework in Frameworks */,
+				D6E8148D04FC8926F94F8F83BEF6329B /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -109,19 +125,49 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		1067E2F3654F4F6CAFF6E4BA9E2D6D52 /* Support Files */ = {
+		0BDFD8676D68D533571E384116C9FE44 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				7D35C08B03052703A04D98BD164EC92D /* FallInLink.modulemap */,
-				B91040F3A4D02C5EA3808C64E302A598 /* FallInLink-dummy.m */,
-				C279AA8392A2F41CE5FF9EC415600A06 /* FallInLink-Info.plist */,
-				3F0D05A3C6F6BD09BC79B0688CF86C40 /* FallInLink-prefix.pch */,
-				699327EA4CF847CF618769E18DCA5B53 /* FallInLink-umbrella.h */,
-				AE5DEB5082569E5C1248368FD4EE7C64 /* FallInLink.debug.xcconfig */,
-				EF4A40215DB61F2BD5D01CC899172538 /* FallInLink.release.xcconfig */,
+				FB86085465685EC8C19FA9C35BC959FD /* FallInLink.modulemap */,
+				45EF1B2F41FBFE791A205BACE5594B8D /* FallInLink-dummy.m */,
+				D45A5E886338E0A4883BF5538AA07864 /* FallInLink-Info.plist */,
+				FA4A8D482F84AB4E3ED2EA02523D6533 /* FallInLink-prefix.pch */,
+				A425F269A277404FF73AEBC26FB0C8F7 /* FallInLink-umbrella.h */,
+				9D9A4185034390B56A680665D960C460 /* FallInLink.debug.xcconfig */,
+				689767587F074F9F10AB8D013649F42A /* FallInLink.release.xcconfig */,
 			);
 			name = "Support Files";
 			path = "Example/Pods/Target Support Files/FallInLink";
+			sourceTree = "<group>";
+		};
+		0DE05D1BF7460AAFF772E6D6B7660D04 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				CEC88CB069EB90ED9D4EEDCC3192E06E /* LPMetadataProvider+.swift */,
+				757C678BDD935F65442136C8ACEDA4EA /* NSItemProvider+.swift */,
+				AF47D69A90963CA4F64EA336DF5C2375 /* UIColor+.swift */,
+				4AFAD7E4EC4DE2520A3E6BA64B87E163 /* UIImage+.swift */,
+			);
+			name = Extensions;
+			path = "Sources/fallinlink-iOS/Classes/Extensions";
+			sourceTree = "<group>";
+		};
+		24325BFA3D4F4AF97A182AF34959D3E0 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				104CFA22AD6F8CAE4250D431F37C38B2 /* FallInLink.podspec */,
+				40FC9F9BDAE5BE45E84255984F60C050 /* LICENSE */,
+				45FF95977DA80810B4630BCC0224C235 /* README.md */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		27931B6CB0984758960642BD9DDFE2B3 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A501FEEEBF7881C1D9C7277C0244350B /* FallInLink */,
+			);
+			name = "Development Pods";
 			sourceTree = "<group>";
 		};
 		409C388C22DD976D279EB15A1D7C1CA1 /* Pods-FallInLink_Example */ = {
@@ -141,14 +187,13 @@
 			path = "Target Support Files/Pods-FallInLink_Example";
 			sourceTree = "<group>";
 		};
-		52487C688CB3B0DEC09A8D8707DAB842 /* Pod */ = {
+		455209AF9390DBF4224D820E83F5E403 /* Errors */ = {
 			isa = PBXGroup;
 			children = (
-				A1AC55777A8D185211815A78B4F31A90 /* FallInLink.podspec */,
-				55B2A01CC17F181C0D2BB8F32F68CB87 /* LICENSE */,
-				F80F7ED547E4FFB6177044D39FBC6A6B /* README.md */,
+				76DE665EE55B45DC210222B821F6DBE8 /* LinkError.swift */,
 			);
-			name = Pod;
+			name = Errors;
+			path = "Sources/fallinlink-iOS/Classes/Errors";
 			sourceTree = "<group>";
 		};
 		578452D2E740E91742655AC8F1636D1F /* iOS */ = {
@@ -159,31 +204,28 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		9F46575A5CA4B311E722BFBFDD3E2FCC /* FallInLink */ = {
+		A501FEEEBF7881C1D9C7277C0244350B /* FallInLink */ = {
 			isa = PBXGroup;
 			children = (
-				C936BD9ADB08424FDE99483CA83CA1DD /* ReplaceMe.swift */,
-				52487C688CB3B0DEC09A8D8707DAB842 /* Pod */,
-				1067E2F3654F4F6CAFF6E4BA9E2D6D52 /* Support Files */,
+				6343B53F40DDE5C562D46B78FE181DD3 /* LinkMetadata.swift */,
+				EFD74420E9EEB115896EFAFA6C607351 /* LinkPreviewController+Style.swift */,
+				D8C1D01926508D7430469DB6678663AD /* LinkViewController.swift */,
+				5B49FD6D2C8465153C90A96719A473F4 /* LinkViewControllerDelegate.swift */,
+				455209AF9390DBF4224D820E83F5E403 /* Errors */,
+				0DE05D1BF7460AAFF772E6D6B7660D04 /* Extensions */,
+				24325BFA3D4F4AF97A182AF34959D3E0 /* Pod */,
+				0BDFD8676D68D533571E384116C9FE44 /* Support Files */,
 			);
 			name = FallInLink;
 			path = ../..;
 			sourceTree = "<group>";
 		};
-		9FA796C4C47F5461951133AAF2D5C30F /* Development Pods */ = {
-			isa = PBXGroup;
-			children = (
-				9F46575A5CA4B311E722BFBFDD3E2FCC /* FallInLink */,
-			);
-			name = "Development Pods";
-			sourceTree = "<group>";
-		};
 		AB738C160436B13771ED3BDC0AEA535B /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				EBC3E31010F1143F735146FAF35EE842 /* FallInLink */,
-				59A006D89DFE25EADF1BFAA3BE8C2898 /* Pods-FallInLink_Example */,
-				F4A03516F03BC1FA88044D3749FF6049 /* Pods-FallInLink_Tests */,
+				EBC3E31010F1143F735146FAF35EE842 /* FallInLink.framework */,
+				59A006D89DFE25EADF1BFAA3BE8C2898 /* Pods_FallInLink_Example.framework */,
+				F4A03516F03BC1FA88044D3749FF6049 /* Pods_FallInLink_Tests.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -208,7 +250,7 @@
 			isa = PBXGroup;
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
-				9FA796C4C47F5461951133AAF2D5C30F /* Development Pods */,
+				27931B6CB0984758960642BD9DDFE2B3 /* Development Pods */,
 				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
 				AB738C160436B13771ED3BDC0AEA535B /* Products */,
 				0475921F4E4E7C55EE52BDB2A8EAD53B /* Targets Support Files */,
@@ -234,19 +276,19 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A1C515447476732C1307F4BCF197B76E /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				700B7550887ADA1DC93638F49858F351 /* FallInLink-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		D9AFAD3CEA9FFB17AE0941C6B239EEB3 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				84DD8795A614FA2AEC68466CD7977ED4 /* Pods-FallInLink_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E5C6542EBE5DE215F5E2693A643D2192 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				911109539240C28FF8B5CFA88A5EA0C0 /* FallInLink-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -265,11 +307,11 @@
 			buildRules = (
 			);
 			dependencies = (
-				084F311F5D00D14F66448D6361A61026 /* PBXTargetDependency */,
+				4FCE07C68E69A03DBE86E641770805A9 /* PBXTargetDependency */,
 			);
 			name = "Pods-FallInLink_Tests";
 			productName = Pods_FallInLink_Tests;
-			productReference = F4A03516F03BC1FA88044D3749FF6049 /* Pods-FallInLink_Tests */;
+			productReference = F4A03516F03BC1FA88044D3749FF6049 /* Pods_FallInLink_Tests.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		267AF55E47ACEC5DCD36A870C7969936 /* Pods-FallInLink_Example */ = {
@@ -284,21 +326,21 @@
 			buildRules = (
 			);
 			dependencies = (
-				B58F1B0B2DB6FBF3BD45D556D50569F2 /* PBXTargetDependency */,
+				FA8D863A6C742B7BFDAC817EBAA8DAC6 /* PBXTargetDependency */,
 			);
 			name = "Pods-FallInLink_Example";
 			productName = Pods_FallInLink_Example;
-			productReference = 59A006D89DFE25EADF1BFAA3BE8C2898 /* Pods-FallInLink_Example */;
+			productReference = 59A006D89DFE25EADF1BFAA3BE8C2898 /* Pods_FallInLink_Example.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		EABBBD89E4C637517E9A9D12A862CDA8 /* FallInLink */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 60A52C80FFA8484094AD4986AE2489BC /* Build configuration list for PBXNativeTarget "FallInLink" */;
+			buildConfigurationList = 851E2DBE37F0AEC9FB1C1D7C34F20685 /* Build configuration list for PBXNativeTarget "FallInLink" */;
 			buildPhases = (
-				A1C515447476732C1307F4BCF197B76E /* Headers */,
-				DC6F8524770752BC03F2E0BFDFC1F425 /* Sources */,
-				355C8BFA42BB83F2FF508B93A518FE12 /* Frameworks */,
-				ADEBBB0428424E7CCCE8BE03740BC942 /* Resources */,
+				E5C6542EBE5DE215F5E2693A643D2192 /* Headers */,
+				769FFBA21458281D40152854FD56C2B9 /* Sources */,
+				212B231434477A1E57C975F609497BAE /* Frameworks */,
+				D256AAA77311E0356597C0914D176D8F /* Resources */,
 			);
 			buildRules = (
 			);
@@ -306,7 +348,7 @@
 			);
 			name = FallInLink;
 			productName = FallInLink;
-			productReference = EBC3E31010F1143F735146FAF35EE842 /* FallInLink */;
+			productReference = EBC3E31010F1143F735146FAF35EE842 /* FallInLink.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -315,8 +357,13 @@
 		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1300;
-				LastUpgradeCheck = 1300;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					EABBBD89E4C637517E9A9D12A862CDA8 = {
+						LastSwiftMigration = 1500;
+					};
+				};
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -353,7 +400,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		ADEBBB0428424E7CCCE8BE03740BC942 /* Resources */ = {
+		D256AAA77311E0356597C0914D176D8F /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -371,6 +418,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		769FFBA21458281D40152854FD56C2B9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				121E0B737E0EC532A6236BCE32E5F60E /* FallInLink-dummy.m in Sources */,
+				6D6227A938E2F81781D47930AFA88770 /* LinkError.swift in Sources */,
+				69D3696B6582A647BEA27A02BE1D70D5 /* LinkMetadata.swift in Sources */,
+				3C4667E355C7FC901A426E6956BF07BD /* LinkPreviewController+Style.swift in Sources */,
+				1DAA4AD92929672EC7D6FB4A247DA4A9 /* LinkViewController.swift in Sources */,
+				453C2CBFF28E23586B15B6B0AE76D4D5 /* LinkViewControllerDelegate.swift in Sources */,
+				020CDC7A17654885BCE70EEFF7B4A2F5 /* LPMetadataProvider+.swift in Sources */,
+				C7FE8914E091601EE3D129C65725CC98 /* NSItemProvider+.swift in Sources */,
+				B6EF71CDF2E1CDD338923BE86AEB01E0 /* UIColor+.swift in Sources */,
+				B83F1E9CECA424DF4160AF1DD1069987 /* UIImage+.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		BFC37C4101B690D28D01C77B6DB7BE12 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -379,36 +443,27 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		DC6F8524770752BC03F2E0BFDFC1F425 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				AADB682E38A88D2ED6E5202BB377E2B7 /* FallInLink-dummy.m in Sources */,
-				2FB790A38739D0D0CAF83FED7498EF2F /* ReplaceMe.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		084F311F5D00D14F66448D6361A61026 /* PBXTargetDependency */ = {
+		4FCE07C68E69A03DBE86E641770805A9 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Pods-FallInLink_Example";
 			target = 267AF55E47ACEC5DCD36A870C7969936 /* Pods-FallInLink_Example */;
-			targetProxy = 824597C716001DE9524B3F71E4561296 /* PBXContainerItemProxy */;
+			targetProxy = E14318A6B92540518BED76CF5A5BC6AD /* PBXContainerItemProxy */;
 		};
-		B58F1B0B2DB6FBF3BD45D556D50569F2 /* PBXTargetDependency */ = {
+		FA8D863A6C742B7BFDAC817EBAA8DAC6 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = FallInLink;
 			target = EABBBD89E4C637517E9A9D12A862CDA8 /* FallInLink */;
-			targetProxy = 3F3DBE5F58E5C5A3FE0D4C5198A53B4D /* PBXContainerItemProxy */;
+			targetProxy = EF91FB19D06FF530A25A2D29E2D87F55 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		21D527DC4F78D1534951728581F4AE8A /* Debug */ = {
+		251E161A6655026B75AD3EFCF6B93D95 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = AE5DEB5082569E5C1248368FD4EE7C64 /* FallInLink.debug.xcconfig */;
+			baseConfigurationReference = 689767587F074F9F10AB8D013649F42A /* FallInLink.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -422,7 +477,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/FallInLink/FallInLink-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/FallInLink/FallInLink-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/FallInLink/FallInLink.modulemap";
 				PRODUCT_MODULE_NAME = FallInLink;
@@ -430,7 +485,39 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		5AC12936CFC48564E5741378AAE0784C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9D9A4185034390B56A680665D960C460 /* FallInLink.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/FallInLink/FallInLink-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/FallInLink/FallInLink-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/FallInLink/FallInLink.modulemap";
+				PRODUCT_MODULE_NAME = FallInLink;
+				PRODUCT_NAME = FallInLink;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -453,7 +540,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/Pods-FallInLink_Example/Pods-FallInLink_Example-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-FallInLink_Example/Pods-FallInLink_Example.modulemap";
@@ -469,38 +556,6 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
-		};
-		7BF1B4C32DDFAF58AC158592529C40A4 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = EF4A40215DB61F2BD5D01CC899172538 /* FallInLink.release.xcconfig */;
-			buildSettings = {
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/FallInLink/FallInLink-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/FallInLink/FallInLink-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/FallInLink/FallInLink.modulemap";
-				PRODUCT_MODULE_NAME = FallInLink;
-				PRODUCT_NAME = FallInLink;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
 		};
 		7EE7A78859F657F6BEFC651185B43192 /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -579,7 +634,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/Pods-FallInLink_Example/Pods-FallInLink_Example-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-FallInLink_Example/Pods-FallInLink_Example.modulemap";
@@ -613,7 +668,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/Pods-FallInLink_Tests/Pods-FallInLink_Tests-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-FallInLink_Tests/Pods-FallInLink_Tests.modulemap";
@@ -712,7 +767,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/Pods-FallInLink_Tests/Pods-FallInLink_Tests-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-FallInLink_Tests/Pods-FallInLink_Tests.modulemap";
@@ -760,11 +815,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		60A52C80FFA8484094AD4986AE2489BC /* Build configuration list for PBXNativeTarget "FallInLink" */ = {
+		851E2DBE37F0AEC9FB1C1D7C34F20685 /* Build configuration list for PBXNativeTarget "FallInLink" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				21D527DC4F78D1534951728581F4AE8A /* Debug */,
-				7BF1B4C32DDFAF58AC158592529C40A4 /* Release */,
+				5AC12936CFC48564E5741378AAE0784C /* Debug */,
+				251E161A6655026B75AD3EFCF6B93D95 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

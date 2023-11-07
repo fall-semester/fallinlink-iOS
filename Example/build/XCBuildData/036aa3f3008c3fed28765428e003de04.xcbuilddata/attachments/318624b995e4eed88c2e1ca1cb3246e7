@@ -1,0 +1,5 @@
+ extern const unsigned char FallInLinkVersionString[];
+ extern const double FallInLinkVersionNumber;
+
+ const unsigned char FallInLinkVersionString[] __attribute__ ((used)) = "@(#)PROGRAM:FallInLink  PROJECT:Pods-1" "\n";
+ const double FallInLinkVersionNumber __attribute__ ((used)) = (double)1.;

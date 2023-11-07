@@ -1,0 +1,23 @@
+{
+  'version': 0,
+  'use-external-names': 'false',
+  'case-sensitive': 'false',
+  'roots': [{
+    'type': 'directory',
+    'name': "/Users/ijeonhui/Github/fall-semester/fallinlink-iOS/Example/build/Release-iphoneos/FallInLink/FallInLink.framework/Modules"
+    'contents': [{
+      'type': 'file',
+      'name': "module.modulemap",
+      'external-contents': "/Users/ijeonhui/Github/fall-semester/fallinlink-iOS/Example/build/Pods.build/Release-iphoneos/FallInLink.build/unextended-module.modulemap",
+    }]
+    },
+    {
+    'type': 'directory',
+    'name': "/Users/ijeonhui/Github/fall-semester/fallinlink-iOS/Example/build/Release-iphoneos/FallInLink/FallInLink.framework/Headers"
+    'contents': [{
+      'type': 'file',
+      'name': "FallInLink-Swift.h",
+      'external-contents': "/Users/ijeonhui/Github/fall-semester/fallinlink-iOS/Example/build/Pods.build/Release-iphoneos/FallInLink.build/unextended-interface-header.h",
+    }]
+    }]
+}

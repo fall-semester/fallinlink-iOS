@@ -1,0 +1,15 @@
+{
+  "" : {
+    "const-values" : "/Users/ijeonhui/Github/fall-semester/fallinlink-iOS/Example/build/Pods.build/Release-iphoneos/FallInLink.build/Objects-normal/arm64/FallInLink-master.swiftconstvalues",
+    "dependencies" : "/Users/ijeonhui/Github/fall-semester/fallinlink-iOS/Example/build/Pods.build/Release-iphoneos/FallInLink.build/Objects-normal/arm64/FallInLink-master.d",
+    "diagnostics" : "/Users/ijeonhui/Github/fall-semester/fallinlink-iOS/Example/build/Pods.build/Release-iphoneos/FallInLink.build/Objects-normal/arm64/FallInLink-master.dia",
+    "emit-module-dependencies" : "/Users/ijeonhui/Github/fall-semester/fallinlink-iOS/Example/build/Pods.build/Release-iphoneos/FallInLink.build/Objects-normal/arm64/FallInLink-master-emit-module.d",
+    "emit-module-diagnostics" : "/Users/ijeonhui/Github/fall-semester/fallinlink-iOS/Example/build/Pods.build/Release-iphoneos/FallInLink.build/Objects-normal/arm64/FallInLink-master-emit-module.dia",
+    "swift-dependencies" : "/Users/ijeonhui/Github/fall-semester/fallinlink-iOS/Example/build/Pods.build/Release-iphoneos/FallInLink.build/Objects-normal/arm64/FallInLink-master.swiftdeps"
+  },
+  "/Users/ijeonhui/Github/fall-semester/fallinlink-iOS/FallInLink/Classes/ReplaceMe.swift" : {
+    "index-unit-output-path" : "/Pods.build/Release-iphoneos/FallInLink.build/Objects-normal/arm64/ReplaceMe.o",
+    "llvm-bc" : "/Users/ijeonhui/Github/fall-semester/fallinlink-iOS/Example/build/Pods.build/Release-iphoneos/FallInLink.build/Objects-normal/arm64/ReplaceMe.bc",
+    "object" : "/Users/ijeonhui/Github/fall-semester/fallinlink-iOS/Example/build/Pods.build/Release-iphoneos/FallInLink.build/Objects-normal/arm64/ReplaceMe.o"
+  }
+}
