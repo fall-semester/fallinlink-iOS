@@ -1,0 +1,4 @@
+module fallinlink_iOS {
+    header "/Users/ijeonhui/Github/fall-semester/fallinlink-iOS/.build/arm64-apple-macosx/debug/fallinlink_iOS.build/fallinlink-iOS-Swift.h"
+    requires objc
+}
