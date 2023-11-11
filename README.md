@@ -5,11 +5,27 @@
 [![License](https://img.shields.io/cocoapods/l/FallInLink.svg?style=flat)](https://cocoapods.org/pods/FallInLink)
 [![Platform](https://img.shields.io/cocoapods/p/FallInLink.svg?style=flat)](https://cocoapods.org/pods/FallInLink)
 
-## Example
 
-To run the example project, clone the repo, and run `pod install` from the Example directory first.
+> FallInLink is awesome link preview component. 
+> we support free customization and url change during runtime.
+
+we support [AndroidOS](https://github.com/fall-semester/fallinlink-Android) as well as iOS. 
 
 ## Requirements
+
+![iOSVersion](https://img.shields.io/badge/iOS-13-green.svg)
+![SwiftVersion](https://img.shields.io/badge/Swift-5-green.svg)
+
+
+## Example
+
+To run the example project, clone the repo, and run `pod install` from the Example directory first. 
+
+| FallInLink                  |
+|-----------------------------|
+| ![](./images/changeUrl.gif) |
+
+
 
 ## Installation
 
